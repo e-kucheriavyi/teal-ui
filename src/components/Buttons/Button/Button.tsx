@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import styles from './Button.module.scss'
 import { ButtonProps } from './Button.types'
 
 
-class Button extends React.Component<ButtonProps> {
+class Button extends React.Component<PropsWithChildren<ButtonProps>> {
 	static defaultProps: ButtonProps = {
-		text: 'Button',
 		type: 'button',
 		color: 'teal',
 		outline: false,
@@ -39,7 +38,7 @@ class Button extends React.Component<ButtonProps> {
 			className={ this.getClasses() }
 			disabled={ this.props.isDisabled }
 			onClick={ this.handleClick }
-		>{ this.props.text }</button>
+		>{ this.props.children }</button>
 	}
 }
 
