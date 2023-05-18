@@ -3,11 +3,65 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: var(--gap-1);
+	gap: var(--teal-ui-gap-1);
 	border: none;
 	outline: none;
-	font-size: var(--regular-font-size);
-	font-family: var(--element-font);
-	border-radius: var(--radius);
+	font-size: var(--teal-ui-font-size);
+	font-family: var(--teal-ui-font);
+	border-radius: var(--teal-ui-radius);
+	padding-left: var(--teal-ui-padding-2);
+	padding-right: var(--teal-ui-padding-2);
+	transition: var(--teal-ui-transition);
 }
 
+.Button:active {
+	transform: scale(var(--teal-ui-active-scale));
+}
+
+.Button_small {
+	height: var(--teal-ui-height-small);
+}
+
+.Button_regular {
+	height: var(--teal-ui-height-regular);
+}
+
+.Button_large {
+	height: var(--teal-ui-height-large);
+}
+
+.Button_success {
+	color: var(--teal-ui-success-fg);
+	background-color: var(--teal-ui-success-bg);
+}
+
+.Button_success:hover {
+	background-color: var(--teal-ui-success-bg-hover);
+}
+
+.Button_warning {
+	color: var(--teal-ui-success-fg);
+	background-color: var(--teal-ui-warning-bg);
+}
+
+.Button_warning:hover {
+	background-color: var(--teal-ui-warning-bg-hover);
+}
+
+.Button_danger {
+	color: var(--teal-ui-danger-fg);
+	background-color: var(--teal-ui-danger-bg);
+}
+
+.Button_danger:hover {
+	background-color: var(--teal-ui-danger-bg-hover);
+}
+
+.Button_info {
+	color: var(--teal-ui-info-fg);
+	background-color: var(--teal-ui-info-bg);
+}
+
+.Button_info:hover {
+	background-color: var(--teal-ui-info-bg-hover);
+}

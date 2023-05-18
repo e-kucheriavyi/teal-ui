@@ -1,0 +1,41 @@
+:root {
+	--teal-ui-gap-1: 5px;
+	--teal-ui-gap-2: 10px;
+	--teal-ui-gap-3: 15px;
+	--teal-ui-gap-4: 20px;
+	--teal-ui-gap-5: 25px;
+
+	--teal-ui-padding-1: 5px;
+	--teal-ui-padding-2: 10px;
+	--teal-ui-padding-3: 15px;
+	--teal-ui-padding-4: 20px;
+	--teal-ui-padding-5: 25px;
+
+	--teal-ui-radius: 5px;
+
+	--teal-ui-transition: 250ms;
+	--teal-ui-active-scale: 0.98;
+
+	--teal-ui-font-size: 1.6rem;
+	--teal-ui-font: monospace;
+
+	--teal-ui-height-small: 36px;
+	--teal-ui-height-regular: 40px;
+	--teal-ui-height-large: 50px;
+
+	--teal-ui-success-fg: var(--teal-ui-light-1);
+	--teal-ui-success-bg: var(--teal-ui-teal-4);
+	--teal-ui-success-bg-hover: var(--teal-ui-teal-3);
+
+	--teal-ui-warning-fg: var(--teal-ui-light-1);
+	--teal-ui-warning-bg: var(--teal-ui-orange-4);
+	--teal-ui-warning-bg-hover: var(--teal-ui-orange-3);
+
+	--teal-ui-danger-fg: var(--teal-ui-light-1);
+	--teal-ui-danger-bg: var(--teal-ui-red-4);
+	--teal-ui-danger-bg-hover: var(--teal-ui-red-3);
+
+	--teal-ui-info-fg: var(--teal-ui-light-1);
+	--teal-ui-info-bg: var(--teal-ui-violet-4);
+	--teal-ui-info-bg-hover: var(--teal-ui-violet-3);
+}

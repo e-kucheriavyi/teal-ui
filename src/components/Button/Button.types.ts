@@ -1,5 +1,7 @@
 export type ButtonProps = {
 	disabled: boolean
-	type: 'button'|'submit'|'reset'
+	type: 'success'|'warning'|'danger'|'info'
+	size: 'small'|'regular'|'large'
+	nativeType: 'button'|'submit'|'reset'
 	onClick: () => void
 }
