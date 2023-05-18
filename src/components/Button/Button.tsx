@@ -21,14 +21,12 @@ class Button extends React.Component<PropsWithChildren<ButtonProps>> {
 	}
 
 	getClasses = () => {
-		const heightClass = `Button_${ this.props.size }`
-		const colorClass = `Button_${ this.props.type }`
-		const disabledClass = this.props.disabled ? 'Button_disabled' : ''
+		const heightClass = `TealButton_${ this.props.size }`
+		const colorClass = `TealButton_${ this.props.type }`
 		return [
-			'Button',
+			'TealButton',
 			heightClass,
 			colorClass,
-			disabledClass,
 		].join(' ')
 	}
 
