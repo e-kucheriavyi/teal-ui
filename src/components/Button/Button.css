@@ -1,0 +1,13 @@
+.Button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--gap-1);
+	border: none;
+	outline: none;
+	font-size: var(--regular-font-size);
+	font-family: var(--element-font);
+	border-radius: var(--radius);
+}
+
