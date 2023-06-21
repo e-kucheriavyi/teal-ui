@@ -1,3 +1,3 @@
 export { Button, ButtonProps } from './Buttons'
-export { Group, GroupProps, GroupState, GroupItem, GroupItemProps } from './Group'
+export { Choice, ChoiceProps, ChoiceState, ChoiceOption, ChoiceOptionProps } from './Choice'
 export { Skeleton, SkeletonProps } from './Skeleton'

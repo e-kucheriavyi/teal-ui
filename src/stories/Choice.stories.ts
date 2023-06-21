@@ -1,21 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import '../styles/main.css'
-import GroupExample from './GroupExample'
+import ChoiceExample from './ChoiceExample'
 
 
 const meta = {
-	title: 'TealUI/Group',
-	component: GroupExample,
+	title: 'TealUI/Choice',
+	component: ChoiceExample,
 	tags: ['autodocs'],
 	argTypes: {},
-} satisfies Meta<typeof GroupExample>
+} satisfies Meta<typeof ChoiceExample>
 
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 
-const items = [
+const options = [
 	{ value: 'test-0', label: 'Item 0' },
 	{ value: 'test-1', label: 'Item 1' },
 	{ value: 'test-2', label: 'Item 2' },
@@ -23,9 +23,9 @@ const items = [
 
 export const Primary: Story = {
 	args: {
-		items,
+		options,
 		disabled: false,
-		multiChoise: false,
+		multi: false,
 		mode: 'nullable',
 		active: null,
 		size: 'regular',

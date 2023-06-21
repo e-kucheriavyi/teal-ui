@@ -1,4 +1,4 @@
-.TealGroupItem {
+.TealChoiceOption {
 	flex: 1;
 	display: flex;
 	flex-direction: row;
@@ -10,20 +10,20 @@
 	cursor: default;
 }
 
-.TealGroupItem:hover {
+.TealChoiceOption:hover {
 	background-color: var(--teal-ui-light-1);
 	opacity: 0.9;
 }
 
-.TealGroupItem_active {
+.TealChoiceOption_active {
 	background-color: var(--teal-ui-light-1);
 }
 
-.TealGroupItem_disabled {
+.TealChoiceOption_disabled {
 	opacity: 0.8 !important;
 }
 
-.TealGroupItem__content {
+.TealChoiceOption__content {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -31,7 +31,7 @@
 	gap: var(--teal-ui-gap-1);
 }
 
-.TealGroupItem__checkContainer {
+.TealChoiceOption__checkContainer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -42,23 +42,23 @@
 	border-radius: var(--teal-ui-radius);
 }
 
-.TealGroupItem_disabled .TealGroupItem__checkContainer {
+.TealChoiceOption_disabled .TealChoiceOption__checkContainer {
 	background: var(--teal-ui-light-1);
 }
 
-.TealGroupItem_active .TealGroupItem__checkContainer {
+.TealChoiceOption_active .TealChoiceOption__checkContainer {
 	background: transparent;
 }
 
-.TealGroupItem__checkIcon {
+.TealChoiceOption__checkIcon {
 	opacity: 0;
 }
 
-.TealGroupItem:hover .TealGroupItem__checkIcon {
+.TealChoiceOption:hover .TealChoiceOption__checkIcon {
 	opacity: 0.8;
 }
 
-.TealGroupItem_active .TealGroupItem__checkIcon {
+.TealChoiceOption_active .TealChoiceOption__checkIcon {
 	opacity: 1;
 }
 
