@@ -80,8 +80,8 @@ class Choice extends React.Component<ChoiceProps, ChoiceState> {
 	}
 
 	prepareClasses = () => {
-		const sizeClass = `TealGroup_${ this.props.size }`
-		return `TealGroup ${sizeClass}`
+		const sizeClass = `TealChoice_${ this.props.size }`
+		return `TealChoice ${sizeClass}`
 	}
 
 	handleSelect = (option: Option) => {

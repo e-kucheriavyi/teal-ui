@@ -1,4 +1,4 @@
-.TealGroup {
+.TealChoice {
 	display: inline-flex;
 	flex-direction: row;
 	gap: var(--teal-ui-gap-1);
@@ -8,19 +8,19 @@
 	box-sizing: border-box;
 }
 
-.TealGroup_slim {
+.TealChoice_slim {
 	height: var(--teal-ui-height-slim);
 }
 
-.TealGroup_regular {
+.TealChoice_regular {
 	height: var(--teal-ui-height-regular);
 }
 
-.TealGroup_tall {
+.TealChoice_tall {
 	height: var(--teal-ui-height-tall);
 }
 
-.TealGroup_fluid {
+.TealChoice_fluid {
 	flex: 1;
 	display: flex;
 	width: 100%;
