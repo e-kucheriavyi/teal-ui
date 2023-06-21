@@ -1,1 +1,1 @@
-export type SizeOptions = 'slim'|'regular'|'tall'|'fluid'
+export type SizeOptions = 'slimest'|'slim'|'regular'|'tall'|'fluid'

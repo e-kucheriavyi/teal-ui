@@ -8,6 +8,10 @@
 	box-sizing: border-box;
 }
 
+.TealChoice_slimest {
+	height: var(--teal-ui-height-slimest);
+}
+
 .TealChoice_slim {
 	height: var(--teal-ui-height-slim);
 }

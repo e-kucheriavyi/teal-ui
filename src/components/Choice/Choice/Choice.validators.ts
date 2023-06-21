@@ -35,7 +35,7 @@ export function validateChoiceProps(props: ChoiceProps): string {
 		return ''
 	}
 
-	let activeOptions = isActiveArray ? [...active] : [active]
+	let activeOptions = isActiveArray ? [ ...active ] : [ active ]
 
 	let res = ''
 

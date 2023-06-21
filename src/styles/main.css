@@ -7,6 +7,7 @@
 	--teal-ui-gap-4: 20px;
 	--teal-ui-gap-5: 25px;
 
+	--teal-ui-padding-0: 2px;
 	--teal-ui-padding-1: 5px;
 	--teal-ui-padding-2: 10px;
 	--teal-ui-padding-3: 15px;
@@ -14,6 +15,8 @@
 	--teal-ui-padding-5: 25px;
 
 	--teal-ui-radius: 5px;
+	--teal-ui-circle-radius: 50%;
+	--teal-ui-arc-radius: 25px;
 
 	--teal-ui-transition: 250ms;
 	--teal-ui-active-scale: 0.98;
@@ -22,6 +25,7 @@
 	--teal-ui-font-size: 1.6rem;
 	--teal-ui-font: monospace;
 
+	--teal-ui-height-slimest: 24px;
 	--teal-ui-height-slim: 36px;
 	--teal-ui-height-regular: 40px;
 	--teal-ui-height-tall: 50px;

@@ -24,7 +24,7 @@ class Choice extends React.Component<ChoiceProps, ChoiceState> {
 		this.validateProps()
 	}
 
-	componentDidUpdate(prevProps: Readonly<ChoiceProps>, prevState: Readonly<ChoiceState>): void {
+	componentDidUpdate(prevProps: Readonly<ChoiceProps>): void {
 		const { active, options, multi, mode } = this.props
 		if (prevProps.active === active &&
 			prevProps.options === options &&
@@ -81,7 +81,7 @@ class Choice extends React.Component<ChoiceProps, ChoiceState> {
 
 	prepareClasses = () => {
 		const sizeClass = `TealChoice_${ this.props.size }`
-		return `TealChoice ${sizeClass}`
+		return `TealChoice ${ sizeClass }`
 	}
 
 	handleSelect = (option: Option) => {

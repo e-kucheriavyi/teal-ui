@@ -1,0 +1,48 @@
+.TealToggle {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: stretch;
+	gap: var(--teal-ui-gap-0);
+	padding: var(--teal-ui-padding-0);
+	background-color: var(--teal-ui-light-3);
+	border-radius: var(--teal-ui-arc-radius);
+	transition: var(--teal-ui-transition);
+}
+
+.TealToggle_active {
+	background-color: var(--teal-ui-success-bg);
+}
+
+.TealToggle__dot {
+	flex: 1;
+	background-color: var(--teal-ui-light-1);
+	border-radius: var(--teal-ui-circle-radius);
+}
+
+.TealToggle__spacer {
+	flex: 1;
+}
+
+.TealToggle_slimest {
+	height: var(--teal-ui-height-slimest);
+	width: calc(var(--teal-ui-height-slimest) * 2);
+}
+
+.TealToggle_slim {
+	height: var(--teal-ui-height-slim);
+	width: calc(var(--teal-ui-height-slim) * 2);
+}
+
+.TealToggle_regular {
+	height: var(--teal-ui-height-regular);
+	width: calc(var(--teal-ui-height-regular) * 2);
+}
+
+.TealToggle_tall {
+	height: var(--teal-ui-height-tall);
+	width: calc(var(--teal-ui-height-tall) * 2);
+}
+
+.TealToggle_active {
+	flex-direction: row-reverse;
+}
