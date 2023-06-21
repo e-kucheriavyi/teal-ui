@@ -55,7 +55,32 @@
 	--teal-ui-white-bg-hover: var(--teal-ui-light-2);
 }
 
+.TealSuccess {
+	background-color: var(--teal-ui-success-bg) !important;
+	color: var(--teal-ui-success-fg) !important;
+}
 
-.text-red {
-	color: var(--teal-ui-red-3);
+.TealWarning {
+	background-color: var(--teal-ui-warning-bg) !important;
+	color: var(--teal-ui-warning-fg) !important;
+}
+
+.TealDanger {
+	background-color: var(--teal-ui-danger-bg) !important;
+	color: var(--teal-ui-danger-fg) !important;
+}
+
+.TealInfo {
+	background-color: var(--teal-ui-info-bg) !important;
+	color: var(--teal-ui-info-fg) !important;
+}
+
+.TealClear {
+	background-color: var(--teal-ui-clear-bg) !important;
+	color: var(--teal-ui-clear-fg) !important;
+}
+
+.TealWhite {
+	background-color: var(--teal-ui-white-bg) !important;
+	color: var(--teal-ui-white-fg) !important;
 }

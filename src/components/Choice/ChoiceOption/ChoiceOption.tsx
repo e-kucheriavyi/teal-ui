@@ -29,10 +29,12 @@ class ChoiceOption extends React.Component<ChoiceOptionProps, {}> {
 	render = () => {
 		const { option, active, disabled } = this.props
 
+		const acctiveClasses = `TealChoiceOption_active ${this.props.option.activeClasses}`
+
 		return <div
 			className={[
 				'TealChoiceOption',
-				active ? 'TealChoiceOption_active' : '',
+				active ? acctiveClasses : '',
 				disabled ? 'TealChoiceOption_disabled' : '',
 			].join(' ')}
 			onClick={ this.handleClick }

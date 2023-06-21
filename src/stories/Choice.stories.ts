@@ -17,8 +17,10 @@ type Story = StoryObj<typeof meta>
 
 const options = [
 	{ value: 'test-0', label: 'Item 0' },
-	{ value: 'test-1', label: 'Item 1' },
-	{ value: 'test-2', label: 'Item 2' },
+	{ value: 'test-1', label: 'Item 1', activeClasses: 'TealDanger' },
+	{ value: 'test-2', label: 'Item 2', activeClasses: 'TealSuccess' },
+	{ value: 'test-3', label: 'Item 3' },
+	{ value: 'test-4', label: 'Item 4' },
 ]
 
 export const Primary: Story = {
