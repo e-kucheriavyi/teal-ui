@@ -1,0 +1,30 @@
+@keyframes effect-wave {
+	0% {
+		background-position: 50% 50%;
+	}
+
+	100% {
+		background-position: -150% 50%;
+	}
+}
+
+.Skeleton {
+	display: inline-block;
+	border-radius: var(--teal-ui-radius);
+	overflow: hidden;
+	animation: effect-wave 1s infinite;
+	background-color: #ddd;
+	background-image: linear-gradient(90deg, #eee 0%, #eee 20%, #ddd 30%, #ddd 70%, #eee 80%, #eee 100%);
+	background-position: 50% 50%;
+	background-size: 200% 100%;
+	color: transparent;
+	user-select: none;
+	white-space: nowrap;
+}
+
+.Skeleton_fluid {
+	display: block !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
