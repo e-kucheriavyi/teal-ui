@@ -1,4 +1,4 @@
-import { SizeOptions } from '../../types'
+import { SizeOptions } from '../../../types'
 
 
 export type ToggleProps = {
@@ -6,5 +6,6 @@ export type ToggleProps = {
 	name: string
 	size: SizeOptions
 	disabled: boolean
+	required: boolean
 	onChange: (value: boolean) => void
 }

@@ -9,6 +9,7 @@ class Toggle extends React.Component<ToggleProps, {}> {
 		name: '',
 		size: 'regular',
 		disabled: false,
+		required: false,
 		onChange: (value: boolean) => { console.log(value) }
 	}
 
@@ -34,6 +35,12 @@ class Toggle extends React.Component<ToggleProps, {}> {
 		>
 			<div className='TealToggle__dot'></div>
 			<div className='TealToggle__spacer'></div>
+			<input
+				type='hidden'
+				name={ this.props.name }
+				value={ String(this.props.value) }
+				required={ this.props.required }
+			/>
 		</div>
 	}
 }

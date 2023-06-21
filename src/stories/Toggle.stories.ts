@@ -21,5 +21,6 @@ export const Primary: Story = {
 		value: false,
 		size: 'regular',
 		name: 'text',
+		required: false,
 	},
 }
