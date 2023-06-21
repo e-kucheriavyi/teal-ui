@@ -1,0 +1,1 @@
+export { PropsError } from './PropsError'

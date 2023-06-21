@@ -1,3 +1,5 @@
+@import './colors.css';
+
 :root {
 	--teal-ui-gap-1: 5px;
 	--teal-ui-gap-2: 10px;
@@ -20,9 +22,9 @@
 	--teal-ui-font-size: 1.6rem;
 	--teal-ui-font: monospace;
 
-	--teal-ui-height-small: 36px;
+	--teal-ui-height-slim: 36px;
 	--teal-ui-height-regular: 40px;
-	--teal-ui-height-large: 50px;
+	--teal-ui-height-tall: 50px;
 
 	--teal-ui-success-fg: var(--teal-ui-light-1);
 	--teal-ui-success-bg: var(--teal-ui-teal-4);
@@ -39,4 +41,17 @@
 	--teal-ui-info-fg: var(--teal-ui-light-1);
 	--teal-ui-info-bg: var(--teal-ui-violet-4);
 	--teal-ui-info-bg-hover: var(--teal-ui-violet-3);
+
+	--teal-ui-clear-fg: var(--teal-ui-dark-5);
+	--teal-ui-clear-bg: rgba(0, 0, 0, 0.05);
+	--teal-ui-clear-bg-hover: rgba(0, 0, 0, 0.1);
+
+	--teal-ui-white-fg: var(--teal-ui-dark-5);
+	--teal-ui-white-bg: var(--teal-ui-light-1);
+	--teal-ui-white-bg-hover: var(--teal-ui-light-2);
+}
+
+
+.text-red {
+	color: var(--teal-ui-red-3);
 }

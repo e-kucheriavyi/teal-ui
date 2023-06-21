@@ -1,0 +1,64 @@
+.TealGroupItem {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--teal-ui-gap-2);
+	padding: 0 var(--teal-ui-padding-2);
+	border-radius: 5px;
+	cursor: default;
+}
+
+.TealGroupItem:hover {
+	background-color: var(--teal-ui-light-1);
+	opacity: 0.9;
+}
+
+.TealGroupItem_active {
+	background-color: var(--teal-ui-light-1);
+}
+
+.TealGroupItem_disabled {
+	opacity: 0.8 !important;
+}
+
+.TealGroupItem__content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--teal-ui-gap-1);
+}
+
+.TealGroupItem__checkContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 12px;
+	height: 12px;
+	background: var(--teal-ui-light-1);
+	border-radius: var(--teal-ui-radius);
+}
+
+.TealGroupItem_disabled .TealGroupItem__checkContainer {
+	background: var(--teal-ui-light-1);
+}
+
+.TealGroupItem_active .TealGroupItem__checkContainer {
+	background: transparent;
+}
+
+.TealGroupItem__checkIcon {
+	opacity: 0;
+}
+
+.TealGroupItem:hover .TealGroupItem__checkIcon {
+	opacity: 0.8;
+}
+
+.TealGroupItem_active .TealGroupItem__checkIcon {
+	opacity: 1;
+}
+

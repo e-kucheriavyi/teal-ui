@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react'
-import './Button.css'
 import { ButtonProps } from './Button.types'
+import './Button.css'
 
 
 class Button extends React.Component<PropsWithChildren<ButtonProps>> {

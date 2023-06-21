@@ -19,19 +19,24 @@
 }
 
 .TealButton:active {
-	transform: scale(var(--teal-ui-active-scale));
+	filter: brightness(0.95);
 }
 
-.TealButton_small {
-	height: var(--teal-ui-height-small);
+.TealButton_slim {
+	height: var(--teal-ui-height-slim);
 }
 
 .TealButton_regular {
 	height: var(--teal-ui-height-regular);
 }
 
-.TealButton_large {
-	height: var(--teal-ui-height-large);
+.TealButton_tall {
+	height: var(--teal-ui-height-tall);
+}
+
+.TealButton_fluid {
+	width: 100%;
+	height: 100%;
 }
 
 .TealButton_success {
@@ -68,4 +73,22 @@
 
 .TealButton_info:hover {
 	background-color: var(--teal-ui-info-bg-hover);
+}
+
+.TealButton_clear {
+	color: var(--teal-ui-clear-fg);
+	background-color: var(--teal-ui-clear-bg);
+}
+
+.TealButton_clear:hover {
+	background: var(--teal-ui-clear-bg-hover);
+}
+
+.TealButton_white {
+	color: var(--teal-ui-white-fg);
+	background-color: var(--teal-ui-white-bg);
+}
+
+.TealButton_white:hover {
+	background: var(--teal-ui-white-bg-hover);
 }

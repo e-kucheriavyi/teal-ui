@@ -1,47 +1,66 @@
 {
-	"name": "@e-kucheriavyi/teal-ui",
-	"version": "0.0.5",
-	"type": "module",
-	"description": "A react components library",
-	"scripts": {
-		"rollup": "rollup -c"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/e-kucheriavyi/teal-ui.git"
-	},
-	"keywords": [
-		"react",
-		"react",
-		"components",
-		"UI"
-	],
-	"author": "Evgenii Kucheriavyi",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/e-kucheriavyi/teal-ui/issues"
-	},
-	"homepage": "https://github.com/e-kucheriavyi/teal-ui#readme",
-	"devDependencies": {
-		"@rollup/plugin-commonjs": "^25.0.0",
-		"@rollup/plugin-node-resolve": "^15.0.2",
-		"@rollup/plugin-terser": "^0.4.3",
-		"@rollup/plugin-typescript": "^11.1.1",
-		"@types/react": "^18.2.6",
-		"react": "^18.2.0",
-		"rollup": "^3.22.0",
-		"rollup-plugin-dts": "^5.3.0",
-		"rollup-plugin-postcss": "^4.0.2",
-		"tslib": "^2.5.1",
-		"typescript": "^5.0.4"
-	},
-	"main": "dist/cjs/index.js",
-	"module": "dist/esm/index.js",
-	"files": [
-		"dist"
-	],
-	"types": "dist/index.d.ts",
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/e-kucheriavyi"
-	}
+  "name": "@e-kucheriavyi/teal-ui",
+  "version": "0.0.5",
+  "type": "module",
+  "description": "A react components library",
+  "scripts": {
+    "rollup": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-kucheriavyi/teal-ui.git"
+  },
+  "keywords": [
+    "react",
+    "react",
+    "components",
+    "UI"
+  ],
+  "author": "Evgenii Kucheriavyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e-kucheriavyi/teal-ui/issues"
+  },
+  "homepage": "https://github.com/e-kucheriavyi/teal-ui#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@storybook/addon-essentials": "^7.0.22",
+    "@storybook/addon-interactions": "^7.0.22",
+    "@storybook/addon-links": "^7.0.22",
+    "@storybook/blocks": "^7.0.22",
+    "@storybook/react": "^7.0.22",
+    "@storybook/react-webpack5": "^7.0.22",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/react": "^18.2.6",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.22.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^7.0.22",
+    "tslib": "^2.5.1",
+    "typescript": "^5.0.4"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/e-kucheriavyi"
+  },
+  "dependencies": {
+    "sass": "^1.63.4",
+    "scss": "^0.2.4"
+  }
 }
