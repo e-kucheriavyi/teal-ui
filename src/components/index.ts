@@ -14,4 +14,7 @@ export {
 	Checkbox,
 	CheckboxProps,
 	CheckboxState,
+	Radio,
+	RadioProps,
+	RadioState,
 } from './Inputs'
