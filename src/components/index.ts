@@ -7,4 +7,11 @@ export {
 	ChoiceOptionProps,
 } from './Choice'
 export { Skeleton, SkeletonProps } from './Skeleton'
-export { Toggle, ToggleProps } from './Inputs'
+export {
+	Toggle,
+	ToggleProps,
+	ToggleState,
+	Checkbox,
+	CheckboxProps,
+	CheckboxState,
+} from './Inputs'

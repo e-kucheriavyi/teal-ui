@@ -13,6 +13,10 @@
 	background-color: var(--teal-ui-success-bg);
 }
 
+.TealToggle_disabled {
+	opacity: 0.7;
+}
+
 .TealToggle__dot {
 	flex: 1;
 	background-color: var(--teal-ui-light-1);
@@ -23,9 +27,9 @@
 	flex: 1;
 }
 
-.TealToggle_slimest {
-	height: var(--teal-ui-height-slimest);
-	width: calc(var(--teal-ui-height-slimest) * 2);
+.TealToggle_slimmest {
+	height: var(--teal-ui-height-slimmest);
+	width: calc(var(--teal-ui-height-slimmest) * 2);
 }
 
 .TealToggle_slim {

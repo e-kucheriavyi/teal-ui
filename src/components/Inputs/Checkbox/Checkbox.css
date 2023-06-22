@@ -1,0 +1,25 @@
+.TealCheckbox {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--teal-ui-radius);
+	transition: var(--teal-ui-transition);
+	color: var(--teal-ui-success-fg);
+	height: var(--teal-ui-height-slimmest);
+	width: var(--teal-ui-height-slimmest);
+	box-sizing: border-box;
+	cursor: default;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: var(--teal-ui-clear-bg);
+}
+
+.TealCheckbox_active {
+	background-color: var(--teal-ui-success-bg);
+}
+
+.TealCheckbox_disabled {
+	opacity: 0.7;
+}

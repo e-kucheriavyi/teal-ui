@@ -1,21 +1,43 @@
 import React from 'react'
-import { ToggleProps } from './index'
+import { ToggleProps, ToggleState } from './index'
 import './Toggle.css'
 
 
-class Toggle extends React.Component<ToggleProps, {}> {
+class Toggle extends React.Component<ToggleProps, ToggleState> {
 	static defaultProps: ToggleProps = {
 		value: false,
 		name: '',
 		size: 'regular',
 		disabled: false,
 		required: false,
-		onChange: (value: boolean) => { console.log(value) }
+		onChange: (value: boolean) => { console.log(value) },
+	}
+
+	state: ToggleState = {
+		value: false,
+	}
+
+	componentDidMount(): void {
+		this.init()
+	}
+
+	componentDidUpdate(prevProps: Readonly<ToggleProps>): void {
+		if (prevProps.value === this.props.value) {
+			return
+		}
+
+		this.init()
+	}
+
+	init = () => {
+		this.setState({
+			value: this.props.value,
+		})
 	}
 
 	prepareClasses = () => {
 		const sizeClass = `TealToggle_${ this.props.size }`
-		const activeClass = this.props.value ? ' TealToggle_active' : ''
+		const activeClass = this.state.value ? ' TealToggle_active' : ''
 		const disabledClass = this.props.disabled ? ' TealToggle_disabled' : ''
 		return `TealToggle ${ sizeClass }${ activeClass }${ disabledClass }`
 	}
@@ -25,7 +47,10 @@ class Toggle extends React.Component<ToggleProps, {}> {
 			return
 		}
 
-		this.props.onChange(!this.props.value)
+		const value = !this.state.value
+		this.setState({ value }, () => {
+			this.props.onChange(value)
+		})
 	}
 
 	render = () => {
@@ -38,7 +63,7 @@ class Toggle extends React.Component<ToggleProps, {}> {
 			<input
 				type='hidden'
 				name={ this.props.name }
-				value={ String(this.props.value) }
+				value={ String(this.state.value) }
 				required={ this.props.required }
 			/>
 		</div>

@@ -22,8 +22,8 @@
 	filter: brightness(0.95);
 }
 
-.TealButton_slimest {
-	height: var(--teal-ui-height-slimest);
+.TealButton_slimmest {
+	height: var(--teal-ui-height-slimmest);
 }
 
 .TealButton_slim {

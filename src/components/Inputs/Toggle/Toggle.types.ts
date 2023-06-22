@@ -9,3 +9,7 @@ export type ToggleProps = {
 	required: boolean
 	onChange: (value: boolean) => void
 }
+
+export type ToggleState = {
+	value: boolean
+}
