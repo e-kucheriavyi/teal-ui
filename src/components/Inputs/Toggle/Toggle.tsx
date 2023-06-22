@@ -7,7 +7,6 @@ class Toggle extends React.Component<ToggleProps, ToggleState> {
 	static defaultProps: ToggleProps = {
 		value: false,
 		name: '',
-		size: 'regular',
 		disabled: false,
 		required: false,
 		onChange: (value: boolean) => { console.log(value) },
@@ -36,10 +35,9 @@ class Toggle extends React.Component<ToggleProps, ToggleState> {
 	}
 
 	prepareClasses = () => {
-		const sizeClass = `TealToggle_${ this.props.size }`
 		const activeClass = this.state.value ? ' TealToggle_active' : ''
 		const disabledClass = this.props.disabled ? ' TealToggle_disabled' : ''
-		return `TealToggle ${ sizeClass }${ activeClass }${ disabledClass }`
+		return `TealToggle${ activeClass }${ disabledClass }`
 	}
 
 	handleClick = () => {

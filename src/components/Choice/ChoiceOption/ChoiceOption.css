@@ -20,7 +20,7 @@
 }
 
 .TealChoiceOption_disabled {
-	opacity: 0.8 !important;
+	opacity: var(--teal-ui-opacity-disabled) !important;
 }
 
 .TealChoiceOption__content {
@@ -55,7 +55,7 @@
 }
 
 .TealChoiceOption:hover .TealChoiceOption__checkIcon {
-	opacity: 0.8;
+	opacity: var(--teal-ui-opacity-hover);
 }
 
 .TealChoiceOption_active .TealChoiceOption__checkIcon {

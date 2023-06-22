@@ -19,7 +19,6 @@ export const Primary: Story = {
 	args: {
 		disabled: false,
 		value: false,
-		size: 'regular',
 		name: 'text',
 		required: false,
 	},

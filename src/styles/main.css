@@ -1,12 +1,15 @@
 @import './colors.css';
 
 :root {
+	--teal-ui-gap-node: 0;
+	--teal-ui-gap-0: 2px;
 	--teal-ui-gap-1: 5px;
 	--teal-ui-gap-2: 10px;
 	--teal-ui-gap-3: 15px;
 	--teal-ui-gap-4: 20px;
 	--teal-ui-gap-5: 25px;
 
+	--teal-ui-padding-none: 0;
 	--teal-ui-padding-0: 2px;
 	--teal-ui-padding-1: 5px;
 	--teal-ui-padding-2: 10px;
@@ -15,12 +18,16 @@
 	--teal-ui-padding-5: 25px;
 
 	--teal-ui-radius: 5px;
-	--teal-ui-circle-radius: 50%;
-	--teal-ui-arc-radius: 25px;
+	--teal-ui-radius-circle: 50%;
+	--teal-ui-radius-arc: 25px;
 
 	--teal-ui-transition: 250ms;
 	--teal-ui-active-scale: 0.98;
+
 	--teal-ui-opacity: 0.7;
+	--teal-ui-opacity-disabled: 0.7;
+	--teal-ui-opacity-hover: 0.8;
+	--teal-ui-opacity-overlay: 0.3;
 
 	--teal-ui-font-size: 1.6rem;
 	--teal-ui-font: monospace;

@@ -5,8 +5,10 @@
 	gap: var(--teal-ui-gap-0);
 	padding: var(--teal-ui-padding-0);
 	background-color: var(--teal-ui-light-3);
-	border-radius: var(--teal-ui-arc-radius);
+	border-radius: var(--teal-ui-radius-arc);
 	transition: var(--teal-ui-transition);
+	height: var(--teal-ui-height-slimmest);
+	width: calc(var(--teal-ui-height-slimmest) * 2);
 }
 
 .TealToggle_active {
@@ -14,37 +16,17 @@
 }
 
 .TealToggle_disabled {
-	opacity: 0.7;
+	opacity: var(--teal-ui-opacity-disabled);
 }
 
 .TealToggle__dot {
 	flex: 1;
 	background-color: var(--teal-ui-light-1);
-	border-radius: var(--teal-ui-circle-radius);
+	border-radius: var(--teal-ui-radius-circle);
 }
 
 .TealToggle__spacer {
 	flex: 1;
-}
-
-.TealToggle_slimmest {
-	height: var(--teal-ui-height-slimmest);
-	width: calc(var(--teal-ui-height-slimmest) * 2);
-}
-
-.TealToggle_slim {
-	height: var(--teal-ui-height-slim);
-	width: calc(var(--teal-ui-height-slim) * 2);
-}
-
-.TealToggle_regular {
-	height: var(--teal-ui-height-regular);
-	width: calc(var(--teal-ui-height-regular) * 2);
-}
-
-.TealToggle_tall {
-	height: var(--teal-ui-height-tall);
-	width: calc(var(--teal-ui-height-tall) * 2);
 }
 
 .TealToggle_active {
