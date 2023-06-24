@@ -5,7 +5,7 @@ import { BadgeProps } from './index'
 
 class Badge extends React.Component<PropsWithChildren<BadgeProps>, {}> {
 	static defaultProps: BadgeProps = {
-		size: 'slim',
+		size: 'slimmest',
 		color: 'clear',
 	}
 
