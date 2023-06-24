@@ -62,32 +62,86 @@
 	--teal-ui-white-bg-hover: var(--teal-ui-light-2);
 }
 
-.TealSuccess {
+.TealDisablable:disabled {
+	opacity: var(--teal-ui-opacity);
+}
+
+.TealActivable:active {
+	filter: brightness(0.95);
+}
+
+.TealColorMode_success {
 	background-color: var(--teal-ui-success-bg) !important;
 	color: var(--teal-ui-success-fg) !important;
 }
 
-.TealWarning {
+.TealColorMode_warning {
 	background-color: var(--teal-ui-warning-bg) !important;
 	color: var(--teal-ui-warning-fg) !important;
 }
 
-.TealDanger {
+.TealColorMode_danger {
 	background-color: var(--teal-ui-danger-bg) !important;
 	color: var(--teal-ui-danger-fg) !important;
 }
 
-.TealInfo {
+.TealColorMode_info {
 	background-color: var(--teal-ui-info-bg) !important;
 	color: var(--teal-ui-info-fg) !important;
 }
 
-.TealClear {
+.TealColorMode_clear {
 	background-color: var(--teal-ui-clear-bg) !important;
 	color: var(--teal-ui-clear-fg) !important;
 }
 
-.TealWhite {
+.TealColorMode_white {
 	background-color: var(--teal-ui-white-bg) !important;
 	color: var(--teal-ui-white-fg) !important;
+}
+
+.TealHoverable.TealColorMode_success:hover {
+	background-color: var(--teal-ui-success-bg-hover);
+}
+
+.TealHoverable.TealColorMode_warning:hover {
+	background-color: var(--teal-ui-warning-bg-hover);
+}
+
+.TealHoverable.TealColorMode_danger:hover {
+	background-color: var(--teal-ui-danger-bg-hover);
+}
+
+.TealHoverable.TealColorMode_info:hover {
+	background-color: var(--teal-ui-info-bg-hover);
+}
+
+.TealHoverable:hover.TealColorMode_clear:hover {
+	background: var(--teal-ui-clear-bg-hover);
+}
+
+.TealHoverable.TealColorMode_white:hover {
+	background: var(--teal-ui-white-bg-hover);
+}
+
+.TealSizeMode_slimmest {
+	height: var(--teal-ui-height-slimmest);
+}
+
+.TealSizeMode_slim {
+	height: var(--teal-ui-height-slim);
+}
+
+.TealSizeMode_regular {
+	height: var(--teal-ui-height-regular);
+}
+
+.TealSizeMode_tall {
+	height: var(--teal-ui-height-tall);
+}
+
+.TealSizeMode_fluid {
+	display: flex;
+	width: 100%;
+	height: 100%;
 }

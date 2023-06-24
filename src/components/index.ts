@@ -18,3 +18,4 @@ export {
 	RadioProps,
 	RadioState,
 } from './Inputs'
+export { Badge, BadgeProps } from './Badge'

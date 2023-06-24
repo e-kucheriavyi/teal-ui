@@ -6,7 +6,7 @@ import './Button.css'
 class Button extends React.Component<PropsWithChildren<ButtonProps>> {
 	static defaultProps: ButtonProps = {
 		disabled: false,
-		type: 'success',
+		color: 'success',
 		nativeType: 'button',
 		size: 'regular',
 		onClick: () => {},
@@ -21,12 +21,13 @@ class Button extends React.Component<PropsWithChildren<ButtonProps>> {
 	}
 
 	getClasses = () => {
-		const heightClass = `TealButton_${ this.props.size }`
-		const colorClass = `TealButton_${ this.props.type }`
 		return [
 			'TealButton',
-			heightClass,
-			colorClass,
+			'TealDisablable',
+			'TealHoverable',
+			'TealActivable',
+			`TealSizeMode_${ this.props.size }`,
+			`TealColorMode_${ this.props.color }`,
 		].join(' ')
 	}
 

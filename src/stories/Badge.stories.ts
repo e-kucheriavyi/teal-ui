@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import '../styles/main.css'
-import { Button } from '../components/Buttons'
+import { Badge } from '../components'
 
 
 const meta = {
-	title: 'TealUI/Button',
-	component: Button,
+	title: 'TealUI/Badge',
+	component: Badge,
 	tags: ['autodocs'],
 	argTypes: {},
-} satisfies Meta<typeof Button>
+} satisfies Meta<typeof Badge>
 
 
 export default meta
@@ -17,13 +17,7 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
 	args: {
-		disabled: false,
+		size: 'slim',
 		color: 'clear',
-		size: 'regular',
-		nativeType: 'button',
-		onClick: () => {},
-		children: [
-			'Text'
-		]
 	},
 }
