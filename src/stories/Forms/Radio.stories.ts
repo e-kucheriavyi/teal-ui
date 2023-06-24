@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import '../styles/main.css'
+import '../../styles/main.css'
 import RadioExample from './RadioExample'
 
 const meta = {
-	title: 'TealUI/Radio',
+	title: 'TealUI/Inputs/Radio',
 	component: RadioExample,
 	tags: ['autodocs'],
 	argTypes: {},

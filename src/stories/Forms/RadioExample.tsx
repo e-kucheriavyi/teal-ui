@@ -1,5 +1,5 @@
 import React from 'react'
-import { Radio } from '../components'
+import { Radio } from '../../components'
 
 
 class RadioExample extends React.Component {

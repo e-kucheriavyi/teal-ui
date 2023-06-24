@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import '../styles/main.css'
-import { Checkbox } from '../components/Inputs'
+import '../../styles/main.css'
+import { Checkbox } from '../../components/Inputs'
 
 const meta = {
-	title: 'TealUI/Checkbox',
+	title: 'TealUI/Inputs/Checkbox',
 	component: Checkbox,
 	tags: ['autodocs'],
 	argTypes: {},

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import '../styles/main.css'
-import { Toggle } from '../components'
+import '../../styles/main.css'
+import { Toggle } from '../../components'
 
 
 const meta = {
-	title: 'TealUI/Toggle',
+	title: 'TealUI/Inputs/Toggle',
 	component: Toggle,
 	tags: ['autodocs'],
 	argTypes: {},
