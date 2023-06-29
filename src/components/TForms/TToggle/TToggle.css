@@ -1,0 +1,34 @@
+.t-toggle {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: stretch;
+	gap: var(--t-ui-gap-0);
+	padding: var(--t-ui-padding-0);
+	background-color: var(--t-ui-light-3);
+	border-radius: var(--t-ui-radius-arc);
+	transition: var(--t-ui-transition);
+	height: var(--t-ui-height-slimmest);
+	width: calc(var(--t-ui-height-slimmest) * 2);
+}
+
+.t-toggle_active {
+	background-color: var(--t-ui-success-bg);
+}
+
+.t-toggle_disabled {
+	opacity: var(--t-ui-opacity-disabled);
+}
+
+.t-toggle__dot {
+	flex: 1;
+	background-color: var(--t-ui-light-1);
+	border-radius: var(--t-ui-radius-circle);
+}
+
+.t-toggle__spacer {
+	flex: 1;
+}
+
+.t-toggle_active {
+	flex-direction: row-reverse;
+}

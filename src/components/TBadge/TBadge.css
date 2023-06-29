@@ -1,0 +1,10 @@
+.t-badge {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--t-ui-gap-1);
+	border-radius: var(--t-ui-radius);
+	padding: 0 var(--t-ui-padding-2);
+}
+

@@ -1,0 +1,25 @@
+.t-checkbox {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--t-ui-radius);
+	transition: var(--t-ui-transition);
+	color: var(--t-ui-success-fg);
+	height: var(--t-ui-height-slimmest);
+	width: var(--t-ui-height-slimmest);
+	box-sizing: border-box;
+	cursor: default;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: var(--t-ui-clear-bg);
+}
+
+.t-checkbox_active {
+	background-color: var(--t-ui-success-bg);
+}
+
+.t-checkbox_disabled {
+	opacity: var(--t-ui-opacity-disabled);
+}

@@ -1,0 +1,15 @@
+.t-button {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--t-ui-gap-1);
+	border: none;
+	outline: none;
+	font-size: var(--t-ui-font-size);
+	font-family: var(--t-ui-font);
+	border-radius: var(--t-ui-radius);
+	padding-left: var(--t-ui-padding-2);
+	padding-right: var(--t-ui-padding-2);
+	transition: var(--t-ui-transition);
+}

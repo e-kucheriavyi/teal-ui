@@ -1,1 +1,1 @@
-export { PropsError } from './PropsError'
+export { TPropsError } from './TPropsError'

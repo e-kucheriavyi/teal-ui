@@ -1,21 +1,21 @@
-export { Button, ButtonProps } from './Buttons'
+export { TButton, TButtonProps } from './TButton'
 export {
-	Choice,
-	ChoiceProps,
-	ChoiceState,
-	ChoiceOption,
-	ChoiceOptionProps,
-} from './Choice'
-export { Skeleton, SkeletonProps } from './Skeleton'
+	TChoice,
+	TChoiceProps,
+	TChoiceState,
+	TChoiceOption,
+	TChoiceOptionProps,
+} from './TChoice'
+export { TSkeleton, TSkeletonProps } from './TSkeleton'
 export {
-	Toggle,
-	ToggleProps,
-	ToggleState,
-	Checkbox,
-	CheckboxProps,
-	CheckboxState,
-	Radio,
-	RadioProps,
-	RadioState,
-} from './Inputs'
-export { Badge, BadgeProps } from './Badge'
+	TToggle,
+	TToggleProps,
+	TToggleState,
+	TCheckbox,
+	TCheckboxProps,
+	TCheckboxState,
+	TRadio,
+	TRadioProps,
+	TRadioState,
+} from './TForms'
+export { TBadge, TBadgeProps } from './TBadge'

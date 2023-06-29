@@ -1,0 +1,64 @@
+.t-choice-option {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--t-ui-gap-2);
+	padding: 0 var(--t-ui-padding-2);
+	border-radius: 5px;
+	cursor: default;
+}
+
+.t-choice-option:hover {
+	background-color: var(--t-ui-light-1);
+	opacity: 0.9;
+}
+
+.t-choice-option_active {
+	background-color: var(--t-ui-light-1);
+}
+
+.t-choice-option_disabled {
+	opacity: var(--t-ui-opacity-disabled) !important;
+}
+
+.t-choice-option__content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--t-ui-gap-1);
+}
+
+.t-choice-option__check-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 12px;
+	height: 12px;
+	background: var(--t-ui-light-1);
+	border-radius: var(--t-ui-radius);
+}
+
+.t-choice-option_disabled .t-choice-option__check-container {
+	background: var(--t-ui-light-1);
+}
+
+.t-choice-option_active .t-choice-option__check-container {
+	background: transparent;
+}
+
+.t-choice-option__check-icon {
+	opacity: 0;
+}
+
+.t-choice-option:hover .t-choice-option__check-icon {
+	opacity: var(--t-ui-opacity-hover);
+}
+
+.t-choice-option_active .t-choice-option__check-icon {
+	opacity: 1;
+}
+

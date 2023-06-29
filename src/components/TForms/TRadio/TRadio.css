@@ -1,0 +1,31 @@
+.t-radio {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: stretch;
+	width: var(--t-ui-height-slimmest);
+	height: var(--t-ui-height-slimmest);
+	box-sizing: border-box;
+	background-color: var(--t-ui-clear-bg);
+	border-radius: var(--t-ui-radius-circle);
+	padding: var(--t-ui-padding-1);
+	transition: var(--t-ui-transition);
+}
+
+.t-radio_active {
+	background-color: var(--t-ui-success-bg);
+}
+
+.t-radio__dot {
+	flex: 1;
+	border-radius: var(--t-ui-radius-circle);
+	background-color: var(--t-ui-white-bg);
+}
+
+.t-radio input {
+	display: none;
+}
+
+.t-radio_disabled {
+	opacity: var(--t-ui-opacity-disabled);
+}

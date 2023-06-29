@@ -1,146 +1,146 @@
 @import './colors.css';
 
 :root {
-	--teal-ui-gap-node: 0;
-	--teal-ui-gap-0: 2px;
-	--teal-ui-gap-1: 5px;
-	--teal-ui-gap-2: 10px;
-	--teal-ui-gap-3: 15px;
-	--teal-ui-gap-4: 20px;
-	--teal-ui-gap-5: 25px;
+	--t-ui-gap-node: 0;
+	--t-ui-gap-0: 2px;
+	--t-ui-gap-1: 5px;
+	--t-ui-gap-2: 10px;
+	--t-ui-gap-3: 15px;
+	--t-ui-gap-4: 20px;
+	--t-ui-gap-5: 25px;
 
-	--teal-ui-padding-none: 0;
-	--teal-ui-padding-0: 2px;
-	--teal-ui-padding-1: 5px;
-	--teal-ui-padding-2: 10px;
-	--teal-ui-padding-3: 15px;
-	--teal-ui-padding-4: 20px;
-	--teal-ui-padding-5: 25px;
+	--t-ui-padding-none: 0;
+	--t-ui-padding-0: 2px;
+	--t-ui-padding-1: 5px;
+	--t-ui-padding-2: 10px;
+	--t-ui-padding-3: 15px;
+	--t-ui-padding-4: 20px;
+	--t-ui-padding-5: 25px;
 
-	--teal-ui-radius: 5px;
-	--teal-ui-radius-circle: 50%;
-	--teal-ui-radius-arc: 25px;
+	--t-ui-radius: 5px;
+	--t-ui-radius-circle: 50%;
+	--t-ui-radius-arc: 25px;
 
-	--teal-ui-transition: 250ms;
-	--teal-ui-active-scale: 0.98;
+	--t-ui-transition: 250ms;
+	--t-ui-active-scale: 0.98;
 
-	--teal-ui-opacity: 0.7;
-	--teal-ui-opacity-disabled: 0.7;
-	--teal-ui-opacity-hover: 0.8;
-	--teal-ui-opacity-overlay: 0.3;
+	--t-ui-opacity: 0.7;
+	--t-ui-opacity-disabled: 0.7;
+	--t-ui-opacity-hover: 0.8;
+	--t-ui-opacity-overlay: 0.3;
 
-	--teal-ui-font-size: 1.6rem;
-	--teal-ui-font: monospace;
+	--t-ui-font-size: 1.6rem;
+	--t-ui-font: monospace;
 
-	--teal-ui-height-slimmest: 24px;
-	--teal-ui-height-slim: 36px;
-	--teal-ui-height-regular: 40px;
-	--teal-ui-height-tall: 50px;
+	--t-ui-height-slimmest: 24px;
+	--t-ui-height-slim: 36px;
+	--t-ui-height-regular: 40px;
+	--t-ui-height-tall: 50px;
 
-	--teal-ui-success-fg: var(--teal-ui-light-1);
-	--teal-ui-success-bg: var(--teal-ui-teal-4);
-	--teal-ui-success-bg-hover: var(--teal-ui-teal-3);
+	--t-ui-success-fg: var(--t-ui-light-1);
+	--t-ui-success-bg: var(--t-ui-teal-4);
+	--t-ui-success-bg-hover: var(--t-ui-teal-3);
 
-	--teal-ui-warning-fg: var(--teal-ui-light-1);
-	--teal-ui-warning-bg: var(--teal-ui-orange-4);
-	--teal-ui-warning-bg-hover: var(--teal-ui-orange-3);
+	--t-ui-warning-fg: var(--t-ui-light-1);
+	--t-ui-warning-bg: var(--t-ui-orange-4);
+	--t-ui-warning-bg-hover: var(--t-ui-orange-3);
 
-	--teal-ui-danger-fg: var(--teal-ui-light-1);
-	--teal-ui-danger-bg: var(--teal-ui-red-4);
-	--teal-ui-danger-bg-hover: var(--teal-ui-red-3);
+	--t-ui-danger-fg: var(--t-ui-light-1);
+	--t-ui-danger-bg: var(--t-ui-red-4);
+	--t-ui-danger-bg-hover: var(--t-ui-red-3);
 
-	--teal-ui-info-fg: var(--teal-ui-light-1);
-	--teal-ui-info-bg: var(--teal-ui-violet-4);
-	--teal-ui-info-bg-hover: var(--teal-ui-violet-3);
+	--t-ui-info-fg: var(--t-ui-light-1);
+	--t-ui-info-bg: var(--t-ui-violet-4);
+	--t-ui-info-bg-hover: var(--t-ui-violet-3);
 
-	--teal-ui-clear-fg: var(--teal-ui-dark-5);
-	--teal-ui-clear-bg: rgba(0, 0, 0, 0.05);
-	--teal-ui-clear-bg-hover: rgba(0, 0, 0, 0.1);
+	--t-ui-clear-fg: var(--t-ui-dark-5);
+	--t-ui-clear-bg: rgba(0, 0, 0, 0.05);
+	--t-ui-clear-bg-hover: rgba(0, 0, 0, 0.1);
 
-	--teal-ui-white-fg: var(--teal-ui-dark-5);
-	--teal-ui-white-bg: var(--teal-ui-light-1);
-	--teal-ui-white-bg-hover: var(--teal-ui-light-2);
+	--t-ui-white-fg: var(--t-ui-dark-5);
+	--t-ui-white-bg: var(--t-ui-light-1);
+	--t-ui-white-bg-hover: var(--t-ui-light-2);
 }
 
-.TealDisablable:disabled {
-	opacity: var(--teal-ui-opacity);
+.t-disablable:disabled {
+	opacity: var(--t-ui-opacity);
 }
 
-.TealActivable:active {
+.t-activable:active {
 	filter: brightness(0.95);
 }
 
-.TealColorMode_success {
-	background-color: var(--teal-ui-success-bg) !important;
-	color: var(--teal-ui-success-fg) !important;
+.t-color-mode_success {
+	background-color: var(--t-ui-success-bg) !important;
+	color: var(--t-ui-success-fg) !important;
 }
 
-.TealColorMode_warning {
-	background-color: var(--teal-ui-warning-bg) !important;
-	color: var(--teal-ui-warning-fg) !important;
+.t-color-mode_warning {
+	background-color: var(--t-ui-warning-bg) !important;
+	color: var(--t-ui-warning-fg) !important;
 }
 
-.TealColorMode_danger {
-	background-color: var(--teal-ui-danger-bg) !important;
-	color: var(--teal-ui-danger-fg) !important;
+.t-color-mode_danger {
+	background-color: var(--t-ui-danger-bg) !important;
+	color: var(--t-ui-danger-fg) !important;
 }
 
-.TealColorMode_info {
-	background-color: var(--teal-ui-info-bg) !important;
-	color: var(--teal-ui-info-fg) !important;
+.t-color-mode_info {
+	background-color: var(--t-ui-info-bg) !important;
+	color: var(--t-ui-info-fg) !important;
 }
 
-.TealColorMode_clear {
-	background-color: var(--teal-ui-clear-bg) !important;
-	color: var(--teal-ui-clear-fg) !important;
+.t-color-mode_clear {
+	background-color: var(--t-ui-clear-bg) !important;
+	color: var(--t-ui-clear-fg) !important;
 }
 
-.TealColorMode_white {
-	background-color: var(--teal-ui-white-bg) !important;
-	color: var(--teal-ui-white-fg) !important;
+.t-color-mode_white {
+	background-color: var(--t-ui-white-bg) !important;
+	color: var(--t-ui-white-fg) !important;
 }
 
-.TealHoverable.TealColorMode_success:hover {
-	background-color: var(--teal-ui-success-bg-hover);
+.t-hoverable.t-color-mode_success:hover {
+	background-color: var(--t-ui-success-bg-hover);
 }
 
-.TealHoverable.TealColorMode_warning:hover {
-	background-color: var(--teal-ui-warning-bg-hover);
+.t-hoverable.t-color-mode_warning:hover {
+	background-color: var(--t-ui-warning-bg-hover);
 }
 
-.TealHoverable.TealColorMode_danger:hover {
-	background-color: var(--teal-ui-danger-bg-hover);
+.t-hoverable.t-color-mode_danger:hover {
+	background-color: var(--t-ui-danger-bg-hover);
 }
 
-.TealHoverable.TealColorMode_info:hover {
-	background-color: var(--teal-ui-info-bg-hover);
+.t-hoverable.t-color-mode_info:hover {
+	background-color: var(--t-ui-info-bg-hover);
 }
 
-.TealHoverable:hover.TealColorMode_clear:hover {
-	background: var(--teal-ui-clear-bg-hover);
+.t-hoverable:hover.t-color-mode_clear:hover {
+	background: var(--t-ui-clear-bg-hover);
 }
 
-.TealHoverable.TealColorMode_white:hover {
-	background: var(--teal-ui-white-bg-hover);
+.t-hoverable.t-color-mode_white:hover {
+	background: var(--t-ui-white-bg-hover);
 }
 
-.TealSizeMode_slimmest {
-	height: var(--teal-ui-height-slimmest);
+.t-size-mode_slimmest {
+	height: var(--t-ui-height-slimmest);
 }
 
-.TealSizeMode_slim {
-	height: var(--teal-ui-height-slim);
+.t-size-mode_slim {
+	height: var(--t-ui-height-slim);
 }
 
-.TealSizeMode_regular {
-	height: var(--teal-ui-height-regular);
+.t-size-mode_regular {
+	height: var(--t-ui-height-regular);
 }
 
-.TealSizeMode_tall {
-	height: var(--teal-ui-height-tall);
+.t-size-mode_tall {
+	height: var(--t-ui-height-tall);
 }
 
-.TealSizeMode_fluid {
+.t-size-mode_fluid {
 	display: flex;
 	width: 100%;
 	height: 100%;

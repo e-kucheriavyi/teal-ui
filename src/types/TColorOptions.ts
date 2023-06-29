@@ -1,0 +1,1 @@
+export type TColorOptions = 'success'|'warning'|'danger'|'info'|'clear'|'white'
